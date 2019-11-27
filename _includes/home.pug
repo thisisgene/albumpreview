@@ -14,87 +14,86 @@ section#home
     .sub-title
       h2 Exclusive Album Preview
   .player
-    //- #graph-canvas
-    button#play-button(onClick="togglePlay()")
-    .progress-container
-      //- #current-time
-      progress#progress(value='10', max='100')
-      //- #total-time
-
+ 
     .playlist
-      table
-        tr(onClick="setCurrentSong(this.id, 'Bad Jazz _Mix_04.wav')")#badjazz
-          td Bad Jazz
-          td 03:43
-        tr(onClick="setCurrentSong(this.id, 'Balada_01.mp3')")#balada
-          td Balada of a Rainy Fall
-          td 04:23
-        tr(onClick="setCurrentSong(this.id, 'Iron Ore_04.mp3')")#ironore.current
-          td Iron Ore
-          td 04:53
+      <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719297239%3Fsecret_token%3Ds-DEcCK&color=%235fe7d5&inverse=true&auto_play=false&show_user=true"></iframe>
+      <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/711202672%3Fsecret_token%3Ds-h709b&color=%235fe7d5&inverse=true&auto_play=false&show_user=true"></iframe>
+      <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719297107%3Fsecret_token%3Ds-zNMko&color=%235fe7d5&inverse=true&auto_play=false&show_user=true"></iframe>
+
+
+      //- table
+      //-   tr(onClick="setCurrentSong(this.id, 'Bad Jazz _Mix_04.wav')")#badjazz
+      //-     td Bad Jazz
+      //-     td 03:43
+      //-   tr(onClick="setCurrentSong(this.id, 'Balada_01.mp3')")#balada
+      //-     td Balada of a Rainy Fall
+      //-     td 04:23
+      //-   tr(onClick="setCurrentSong(this.id, 'Iron Ore_04.mp3')")#ironore.current
+      //-     td Iron Ore
+      //-     td 04:53
         
 
 
-  a(href="#info-section").scroll-link Mehr Information
-    //- #info-section
-      .info-box
-        //- .title
-        //-   h1 CALM DOWN, IT'S OVER
-        //-   h2 Eugene Delta 
-        p
-          | Eugene Deltas Debut-Album 
-          strong Calm down, it&rsquo;s over
-          |  ist die intensive Auseinandersetzung mit dem 
-          em Ende
-          | .
-        p
-          | Das reicht vom kleinen, pers&ouml;nlichen - dem Ende einer Sommeraff&auml;re, die man selbst zu ernst genommen hat oder dem Ende bzw. Nicht-enden-wollen eines Traumes - &uuml;ber den Verlusst einer nahestehenden Person - den Zusammenbruch eines Systems - bis hin zur omnipr&auml;senten Gefahr - zum Weltuntergang, zur (Post-)Apokalypse.
-        p
-          | Es ist die st&auml;ndige Konfrontation mit Dingen die enden bzw. der Angst davor, dem Nicht-wahrhaben-wollen - vielleicht auch dem Nicht-zulassen - dass etwas endet.
-        p
-          | Die Zeile 
-          em Calm down, it&apos;s over - it doesn&apos;t feel over 
-          | taucht an unterschiedlichen Stellen des Albums immer wieder auf, um schlussendlich quasi erl&ouml;send als 
-          em Calm down, it&rsquo;s over 
-          | unerwidert stehenbleiben zu d&uuml;rfen.
-        p
-          | Dabei ist das Album eine immerw&auml;hrende Gratwanderung zwischen verdrossenem Realit&auml;tsverst&auml;ndnis und lustvoll, phantastischen Gedankenspielen. Dystopische Realit&auml;t vs. Utopische Phantasie.
-        p
-          em I returned - wanting you back
-        p
-          em And here I stand - stabbed in the back
-        p
-          em It&rsquo;s a twist of fortune - the perfect ending
-        p
-          | (aus: 
-          em Bad Jazz
-          | )
-        p
-          em Musikalisch
-          |  ist es breitgef&auml;chert und reicht von voller Bandbesetzung inklusive sph&auml;rischer Synths, Bl&auml;ser- und Streichers&auml;tze bis hin zum einsamen Singer-Songwriter.
-        p
-          | Die musikalische Bandbreite widerspiegelt das Spektrum des Inhaltlichen - auch wenn sich hierbei Inhalt und Musik oft nicht decken oder gar ins Gegenteil driften.
-        p
-          | Im Rahmen der Aufnahmen konnten die Bl&auml;ser von 
-          em Federspiel
-          |  f&uuml;r das Einspielen der Bl&auml;sers&auml;tze gewonnen werden. Weiters spielten Florian Nemeth (Schlagzeug) und sangen Patricia Ziegler (
-          em Bitten By
-          | ) und Anna-Laura Schreilechner.
-        p
-          strong Eugene Delta - Calm down, it&rsquo;s over
-        p
-          | written &amp; performed by Eugene Delta
-        p
-          | Produced by Emanuel Donner, Philip Waldenberger &amp; Sam Irl
-        p
-          | Recorded by Philip Waldenberger, Mixed by Philip Waldenberger &amp; Sam Irl
-      //- .link-list
-      //-   .box
-      //-     a(href="") Contact
-      //-   .box
-      //-     a(href="") Test
-      //-   .box
-      //-     a(href="") Test
-      //-   .box
-      //-     a(href="") Emergency Exit
-      
+    a(href="#info-section").scroll-link Album Information
+  #info-section
+    .info-box
+      //- .title
+      //-   h1 CALM DOWN, IT'S OVER
+      //-   h2 Eugene Delta 
+      p
+        | Eugene Deltas Debut-Album 
+        strong Calm down, it&rsquo;s over
+        |  ist die intensive Auseinandersetzung mit dem 
+        em Ende
+        | .
+      p
+        | Das reicht vom kleinen, pers&ouml;nlichen - dem Ende einer Sommeraff&auml;re, die man selbst zu ernst genommen hat oder dem Ende bzw. Nicht-enden-wollen eines Traumes - &uuml;ber den Verlusst einer nahestehenden Person - den Zusammenbruch eines Systems - bis hin zur omnipr&auml;senten Gefahr - zum Weltuntergang, zur (Post-)Apokalypse.
+      p
+        | Es ist die st&auml;ndige Konfrontation mit Dingen die enden bzw. der Angst davor, dem Nicht-wahrhaben-wollen - vielleicht auch dem Nicht-zulassen - dass etwas endet.
+      p
+        | Die Zeile 
+        em Calm down, it&apos;s over - it doesn&apos;t feel over 
+        | taucht an unterschiedlichen Stellen des Albums immer wieder auf, um schlussendlich quasi erl&ouml;send als 
+        em Calm down, it&rsquo;s over 
+        | unerwidert stehenbleiben zu d&uuml;rfen.
+      p
+        | Dabei ist das Album eine immerw&auml;hrende Gratwanderung zwischen verdrossenem Realit&auml;tsverst&auml;ndnis und lustvoll, phantastischen Gedankenspielen. Dystopische Realit&auml;t vs. Utopische Phantasie.
+      p
+        em I returned - wanting you back
+      p
+        em And here I stand - stabbed in the back
+      p
+        em It&rsquo;s a twist of fortune - the perfect ending
+      p
+        | (aus: 
+        em Bad Jazz
+        | )
+      p
+        em Musikalisch
+        |  ist es breitgef&auml;chert und reicht von voller Bandbesetzung inklusive sph&auml;rischer Synths, Bl&auml;ser- und Streichers&auml;tze bis hin zum einsamen Singer-Songwriter.
+      p
+        | Die musikalische Bandbreite widerspiegelt das Spektrum des Inhaltlichen - auch wenn sich hierbei Inhalt und Musik oft nicht decken oder gar ins Gegenteil driften.
+      p
+        | Im Rahmen der Aufnahmen konnten die Bl&auml;ser von 
+        em Federspiel
+        |  f&uuml;r das Einspielen der Bl&auml;sers&auml;tze gewonnen werden. Weiters spielten Florian Nemeth (Schlagzeug) und sangen Patricia Ziegler (
+        em Bitten By
+        | ) und Anna-Laura Schreilechner.
+      p
+        strong Eugene Delta - Calm down, it&rsquo;s over
+      p
+        | written &amp; performed by Eugene Delta
+      p
+        | Produced by Emanuel Donner, Philip Waldenberger &amp; Sam Irl
+      p
+        | Recorded by Philip Waldenberger, Mixed by Philip Waldenberger &amp; Sam Irl
+    //- .link-list
+    //-   .box
+    //-     a(href="") Contact
+    //-   .box
+    //-     a(href="") Test
+    //-   .box
+    //-     a(href="") Test
+    //-   .box
+    //-     a(href="") Emergency Exit
+    
