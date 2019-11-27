@@ -225,20 +225,12 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/assets/music/Bad Jazz _Mix_04.wav": {
+	"/assets/music/Balada_01.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/assets/music/Bad Jazz _Mix_04.wav",
-		"oF": 0
-		},
-	"/assets/music/Balada_Mix_18.wav": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/music/Balada_Mix_18.wav",
+		"oAP": "/assets/music/Balada_01.mp3",
 		"oF": 0
 		},
 	"/assets/music/Iron Ore_04.mp3": {
