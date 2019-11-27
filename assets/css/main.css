@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,300,400,500,600");
+html, body {
+  margin: 0;
+  font-family: Catamaran, Arial, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #000; }
+
+@keyframes currentSong {
+  0% { }
+  50% {
+    color: #ffa; }
+  100% { } }
+
+section#home {
+  background: #000;
+  color: white;
+  width: 100vw;
+  /* ---- particles.js container ---- */
+  /* Get rid of default border in Firefox. */
+  border: none;
+  /* Dimensions */
+  width: 250px;
+  height: 20px;
+  /* For IE10 */
+  color: blue; }
+  section#home canvas {
+    display: block;
+    vertical-align: bottom; }
+  section#home #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; }
+  section#home .title-wrapper {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none; }
+    section#home .title-wrapper h1 {
+      margin: 1rem 1rem 0;
+      filter: blur(1px);
+      line-height: 1;
+      font-size: 5.3vw; }
+      section#home .title-wrapper h1.left {
+        color: #5EE7D5;
+        z-index: 4;
+        position: relative; }
+      section#home .title-wrapper h1.right {
+        color: #E75E5E;
+        text-align: right; }
+  section#home .home-wrapper {
+    padding-top: 100px;
+    text-align: center; }
+  section#home .sub-title {
+    width: 100vw;
+    position: relative;
+    z-index: 3;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    text-align: center;
+    pointer-events: none;
+    margin: 0 auto; }
+    section#home .sub-title h2 {
+      font-family: "Open Sans";
+      font-weight: 100;
+      font-size: 3vw;
+      margin: 0; }
+  section#home .player {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; }
+    section#home .player #graph-canvas {
+      filter: blur(1px);
+      position: fixed; }
+    section#home .player #play-button {
+      pointer-events: all;
+      cursor: pointer;
+      outline: none;
+      position: relative;
+      z-index: 30;
+      border: 0;
+      background: transparent;
+      box-sizing: border-box;
+      width: 0;
+      height: 74px;
+      border-color: transparent transparent transparent white;
+      transition: 100ms all ease;
+      cursor: pointer;
+      border-style: solid;
+      border-width: 37px 0px 37px 60px;
+      padding: 0; }
+      section#home .player #play-button.pause {
+        border-style: double;
+        border-width: 0px 0 0px 60px; }
+      section#home .player #play-button:hover {
+        transform: scale(1.1); }
+    section#home .player .progress-container {
+      color: white;
+      margin-top: 1rem; }
+      section#home .player .progress-container progress {
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 3px; }
+        section#home .player .progress-container progress::-moz-progress-bar {
+          border-radius: 50%;
+          background: white; }
+        section#home .player .progress-container progress::-webkit-progress-bar {
+          background: transparent; }
+        section#home .player .progress-container progress::-webkit-progress-value {
+          background: white; }
+    section#home .player .playlist table {
+      pointer-events: all;
+      color: white;
+      width: 200px;
+      border-collapse: collapse; }
+      section#home .player .playlist table tr {
+        cursor: pointer;
+        transition: transform 200ms ease-in-out; }
+        section#home .player .playlist table tr:hover {
+          transform: scale(1.1); }
+        section#home .player .playlist table tr.current {
+          font-weight: bold;
+          transform: scale(1.2);
+          animation: 4000ms currentSong infinite; }
+        section#home .player .playlist table tr td {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+          section#home .player .playlist table tr td:last-child {
+            text-align: right; }
+  section#home #info-section {
+    background: white;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    mix-blend-mode: difference;
+    padding: 3rem 0;
+    pointer-events: none; }
+    section#home #info-section .info-box {
+      background: white;
+      color: #111;
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 800px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 30px 100px; }
+      section#home #info-section .info-box .title {
+        text-align: center; }
+        section#home #info-section .info-box .title * {
+          margin: 0; }
+        section#home #info-section .info-box .title h1 {
+          line-height: 1; }
+        section#home #info-section .info-box .title h2 {
+          color: #555; }
+      section#home #info-section .info-box p {
+        line-height: 1.2; }
+  @media (max-width: 720px) {
+    section#home {
+      padding-top: 1rem; }
+      section#home .home-wrapper h1.left {
+        color: #356894; }
+      section#home .home-wrapper h1.right {
+        color: #98237A; }
+      section#home .player {
+        width: 100%;
+        top: 0px; }
+      section#home #info-section .info-box {
+        max-width: 100%;
+        padding: 2rem; } }

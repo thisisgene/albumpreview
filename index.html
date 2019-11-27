@@ -1,0 +1,56 @@
+<!DOCTYPE html(lang='de')>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>TITLE</title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width"/>
+  <!--// Google verification-->
+  <!--meta(name='google-site-verification', content='u6mzEFPkp8pWrEMysWNZG7uqexc6ihIYWyXLw-2SZtA')-->
+  <!--// favicons-->
+  <link rel="shortcut icon" href="assets/favicon.ico?" type="image/x-icon"/>
+  <link rel="icon" href="assets/favicon.ico?" type="image/x-icon"/>
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <!-- javascript-->
+</head>
+<import>playlist from '../assets/music/playlist'</import>
+<section id="home">
+  <div id="particles-js"></div>
+  <div class="title-wrapper">
+    <h1 class="left">EUGENE DELTA</h1>
+    <h1 class="right">CALM DOWN, IT'S OVER</h1>
+  </div>
+  <div class="home-wrapper">
+    <div class="sub-title">
+      <h2>Exclusive Album Preview</h2>
+    </div>
+  </div>
+  <div class="player">
+    <button id="play-button" onClick="togglePlay()"></button>
+    <div class="progress-container">
+      <progress id="progress" value="10" max="100"></progress>
+    </div>
+    <div class="playlist">
+      <table>
+        <tr onClick="setCurrentSong(this.id, 'Bad Jazz _Mix_04.wav')" id="badjazz">
+          <td>Bad Jazz</td>
+          <td>03:43</td>
+        </tr>
+        <tr onClick="setCurrentSong(this.id, 'Balada_Mix_18.wav')" id="balada">
+          <td>Balada of a Rainy Fall</td>
+          <td>04:23</td>
+        </tr>
+        <tr class="current" onClick="setCurrentSong(this.id, 'Iron Ore_04.mp3')" id="ironore">
+          <td>Iron Ore</td>
+          <td>04:53</td>
+        </tr>
+      </table>
+    </div>
+  </div><a class="scroll-link" href="#info-section">Mehr Information</a>
+</section>
+<script type="text/javascript" src="assets/js/p5.min.js"></script>
+<script type="text/javascript" src="assets/js/p5.sound.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="bower_components/particles.js/particles.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>

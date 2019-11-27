@@ -1,0 +1,244 @@
+@keyframes currentSong
+  0%
+    // filter: blur(12px)
+
+  50%
+    // transform: rotate(180deg)
+    // filter: blur(1px)
+    color: #ffa
+  100%
+    // transform: rotate(360deg)
+    // filter: blur(12px)
+
+section#home
+  
+  background: #000
+  color: white
+  // overflow: hidden
+  width: 100vw
+  
+  canvas 
+    display: block
+    vertical-align: bottom
+    
+
+  /* ---- particles.js container ---- */
+
+  #particles-js 
+    // animation: 200000ms rotate infinite
+    position: fixed
+    // z-index: 0
+    width: 100%
+    height: 100%
+    // top: -50%
+    // left: -50%
+    // background-color: #b61924
+    background-color: #000
+    background-image: url("")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    // filter: blur(1px)
+  
+  .title-wrapper
+    position: fixed
+    // height: 100vh
+    
+    z-index: 3
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    // mix-blend-mode: exclusion
+    pointer-events: none
+    // height: 100px
+    // background: white
+    h1
+      margin: 1rem 1rem 0
+      filter: blur(1px)
+      line-height: 1
+      font:
+        size: 5.3vw
+        // weight: 100
+      // filter: saturate(100%)
+      &.left
+        // font-family: Helvetica
+        color: #5EE7D5
+        z-index: 4
+        position: relative
+      &.right
+        color: #E75E5E
+        text-align: right
+  .home-wrapper
+    padding-top: 100px
+    text-align: center
+  .sub-title
+    width: 100vw
+    position: relative
+    z-index: 3
+    // top: 100px
+    color: rgba(white, .7)
+    text-transform: uppercase
+    text-align: center
+    pointer-events: none
+    margin: 0 auto
+    h2
+      font:
+        family: "Open Sans"
+        weight: 100
+        size: 3vw
+      margin: 0
+  
+  
+  .player
+    // background: red
+    width: 100%
+    height: 100vh
+    top: 0
+    position: absolute
+    z-index: 30
+    // height: 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    pointer-events: none
+
+    #graph-canvas
+      // mix-blend-mode: difference
+      filter: blur(1px)
+      position: fixed
+      // background: yellow
+    #play-button
+      pointer-events: all
+      cursor: pointer
+      outline: none
+      position: relative
+      z-index: 30
+      border: 0
+      background: transparent
+      box-sizing: border-box
+      width: 0
+      height: 74px
+
+      border-color: transparent transparent transparent white
+      transition: 100ms all ease
+      cursor: pointer
+
+      // play state
+      border-style: solid
+      border-width: 37px 0px 37px 60px
+      padding: 0
+
+      &.pause
+        border-style: double
+        border-width: 0px 0 0px 60px
+      
+
+      &:hover 
+        // border-color: transparent transparent transparent #fff
+        transform: scale(1.1)
+    .progress-container
+      color: white
+      // width: 500px
+      margin-top: 1rem
+      progress
+        background: transparent
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        height: 3px
+        &::-moz-progress-bar,
+          border-radius: 50%
+          background: white
+
+        &::-webkit-progress-bar
+          background: transparent
+        &::-webkit-progress-value
+          background: white
+    .playlist
+
+      table
+        // background: rgba(white, .3)
+        pointer-events: all
+        color: white
+        width: 200px
+        border-collapse: collapse
+        tr
+          cursor: pointer
+          transition: transform 200ms ease-in-out
+          &:hover
+            transform: scale(1.1)
+          &.current
+            font:
+              weight: bold
+            transform: scale(1.2)
+            animation: 4000ms currentSong infinite
+          td
+           
+            border-bottom: 1px solid rgba(white, .3)
+            &:last-child
+              text-align: right
+
+
+  /* Get rid of default border in Firefox. */
+  border: none;
+
+  /* Dimensions */
+  width: 250px;
+  height: 20px;
+
+  /* For IE10 */
+  color: blue; 
+      
+  #info-section
+    background: white
+    width: 100%
+    position: relative
+    z-index: 3
+    // top: -400px
+    mix-blend-mode: difference
+    padding: 3rem 0
+    // margin-top: 6rem
+    pointer-events: none
+    .info-box
+      background: rgba(white, 1)
+      // mix-blend-mode: hard-light
+      color: #111
+      position: relative
+      z-index: 3
+      width: 100%
+      max-width: 800px
+      box-sizing: border-box
+      margin: 0 auto
+      padding: 30px 100px
+      // box-shadow: 0 0 6px rgba(black, .5)
+      .title
+        text-align: center
+        *
+          margin: 0
+        h1
+          line-height: 1
+        h2
+          color: #555
+      p
+        line-height: 1.2 
+    
+  @media(max-width: 720px)
+    padding-top: 1rem
+    .home-wrapper
+      h1
+      
+        &.left
+          // font-family: Helvetica
+          color: lighten(#1A3349, 20%)
+        
+        &.right
+          color: #98237A
+    .player
+      width: 100%
+      top: 0px
+    #info-section
+      .info-box
+        max-width: 100%
+        padding: 2rem
+    
