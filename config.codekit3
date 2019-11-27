@@ -225,44 +225,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/assets/music/Balada_01.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/music/Balada_01.mp3",
-		"oF": 0
-		},
-	"/assets/music/Iron Ore_04.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/music/Iron Ore_04.mp3",
-		"oF": 0
-		},
-	"/assets/music/playlist-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/music/playlist-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/music/playlist.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/music/playlist-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"/bower_components/moment/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
