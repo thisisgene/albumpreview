@@ -47,26 +47,31 @@ section#home {
         color: #E75E5E;
         text-align: right; }
   section#home .home-wrapper {
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center; }
   section#home .sub-title {
     width: 100vw;
     position: relative;
     z-index: 3;
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     pointer-events: none;
     margin: 0 auto; }
     section#home .sub-title h2 {
-      font-family: "Open Sans", Arial;
-      font-weight: 100;
-      font-size: 3vw;
-      margin: 0; }
+      font-family: "Catamaran", Arial;
+      font-weight: 600;
+      font-size: 2.5vw;
+      margin: 0;
+      letter-spacing: 4; }
+    section#home .sub-title p {
+      font-family: monospace;
+      margin: 0;
+      letter-spacing: 4;
+      color: #555; }
   section#home .player {
     width: 100vw;
     height: 105vh;
-    margin-top: -180px;
+    margin-top: -160px;
     position: relative;
     z-index: 30;
     display: flex;
@@ -78,7 +83,7 @@ section#home {
       width: 400px;
       max-width: 80%;
       pointer-events: all;
-      margin-bottom: 1rem; }
+      margin-bottom: 3rem; }
       section#home .player .playlist iframe {
         margin-bottom: .3rem; }
       section#home .player .playlist table {
@@ -102,7 +107,7 @@ section#home {
       pointer-events: all;
       color: white;
       cursor: pointer;
-      font-size: .9rem; }
+      font-size: 1.1rem; }
   section#home #info-section {
     background: #eee;
     width: 100vw;
@@ -110,10 +115,9 @@ section#home {
     padding: 0rem 0 3rem;
     pointer-events: none; }
     section#home #info-section .info-box {
+      font-family: 'Open Sans';
       mix-blend-mode: normal;
       color: #111;
-      position: relative;
-      z-index: 3;
       width: 100%;
       max-width: 800px;
       box-sizing: border-box;
@@ -128,7 +132,9 @@ section#home {
         section#home #info-section .info-box .title h2 {
           color: #555; }
       section#home #info-section .info-box p {
-        line-height: 1.2; }
+        line-height: 1.4; }
+        section#home #info-section .info-box p.light {
+          color: #333; }
   @media (max-width: 720px) {
     section#home {
       padding-top: 1rem; }

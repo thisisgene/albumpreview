@@ -71,24 +71,32 @@ section#home
         color: #E75E5E
         text-align: right
   .home-wrapper
-    padding-top: 100px
+    padding-top: 80px
     text-align: center
   .sub-title
     width: 100vw
     position: relative
     z-index: 3
     // top: 100px
-    color: rgba(white, .7)
-    text-transform: uppercase
+    color: rgba(white, .9)
+    // text-transform: uppercase
     text-align: center
     pointer-events: none
     margin: 0 auto
     h2
       font:
-        family: "Open Sans", Arial
-        weight: 100
-        size: 3vw
+        family: "Catamaran", Arial
+        weight: 600
+        size: 2.5vw
       margin: 0
+      letter-spacing: 4
+    p
+      font:
+        family: monospace
+      margin: 0
+      letter-spacing: 4
+      color: #555
+      
   
   
   .player
@@ -96,7 +104,7 @@ section#home
     width: 100vw
     // height: calc(100vh - 180px)
     height: 105vh
-    margin-top: -180px
+    margin-top: -160px
     position: relative
     z-index: 30
     // height: 100px
@@ -111,7 +119,7 @@ section#home
       width: 400px
       max-width: 80%
       pointer-events: all
-      margin-bottom: 1rem
+      margin-bottom: 3rem
       iframe
         margin-bottom: .3rem
       table
@@ -139,31 +147,27 @@ section#home
       pointer-events: all
       color: white
       cursor: pointer
-      font-size: .9rem
+      font:
+        // family: 'Catamaran', Arial, sans-serif
+        size: 1.1rem
       
   #info-section
     background: #eee
     width: 100vw
-    // position: relative
-    // z-index: 3
-    // top: -400px
     mix-blend-mode: difference
     padding: 0rem 0 3rem
-    // margin-top: 6rem
     pointer-events: none
     .info-box
-      // pointer-events: all
-      // background: rgba(white, 1)
+      font-family: 'Open Sans'
       mix-blend-mode: normal
       color: #111
-      position: relative
-      z-index: 3
+      // position: relative
+      // z-index: 3
       width: 100%
       max-width: 800px
       box-sizing: border-box
       margin: 0 auto
       padding: 100px 100px
-      // box-shadow: 0 0 6px rgba(black, .5)
       .title
         text-align: center
         *
@@ -173,7 +177,9 @@ section#home
         h2
           color: #555
       p
-        line-height: 1.2 
+        line-height: 1.4 
+        &.light
+          color: #333
     
   @media(max-width: 720px)
     padding-top: 1rem
