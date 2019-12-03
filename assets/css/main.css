@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Catamaran:100,300,400,500,600");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap");
 html, body {
   margin: 0;
   font-family: Catamaran, Arial, sans-serif;
@@ -67,7 +67,7 @@ section#home {
       font-family: monospace;
       margin: 0;
       letter-spacing: 4;
-      color: #555; }
+      color: #aaa; }
   section#home .player {
     width: 100vw;
     height: 105vh;
@@ -111,6 +111,7 @@ section#home {
   section#home #info-section {
     background: #eee;
     width: 100vw;
+    min-height: 100vh;
     mix-blend-mode: difference;
     padding: 0rem 0 3rem;
     pointer-events: none; }
@@ -122,7 +123,7 @@ section#home {
       max-width: 800px;
       box-sizing: border-box;
       margin: 0 auto;
-      padding: 100px 100px; }
+      padding: 150px 100px; }
       section#home #info-section .info-box .title {
         text-align: center; }
         section#home #info-section .info-box .title * {
@@ -135,6 +136,9 @@ section#home {
         line-height: 1.4; }
         section#home #info-section .info-box p.light {
           color: #333; }
+      section#home #info-section .info-box a {
+        color: #050505;
+        text-decoration: underline; }
   @media (max-width: 720px) {
     section#home {
       padding-top: 1rem; }

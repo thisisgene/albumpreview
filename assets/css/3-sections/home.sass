@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap')
 
 @keyframes currentSong
   0%
@@ -95,7 +95,7 @@ section#home
         family: monospace
       margin: 0
       letter-spacing: 4
-      color: #555
+      color: #aaa
       
   
   
@@ -154,6 +154,7 @@ section#home
   #info-section
     background: #eee
     width: 100vw
+    min-height: 100vh
     mix-blend-mode: difference
     padding: 0rem 0 3rem
     pointer-events: none
@@ -167,7 +168,7 @@ section#home
       max-width: 800px
       box-sizing: border-box
       margin: 0 auto
-      padding: 100px 100px
+      padding: 150px 100px
       .title
         text-align: center
         *
@@ -180,7 +181,9 @@ section#home
         line-height: 1.4 
         &.light
           color: #333
-    
+      a
+        color: #050505
+        text-decoration: underline
   @media(max-width: 720px)
     padding-top: 1rem
     .home-wrapper
