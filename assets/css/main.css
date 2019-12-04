@@ -83,7 +83,7 @@ section#home {
       width: 400px;
       max-width: 80%;
       pointer-events: all;
-      margin-bottom: 3rem; }
+      margin-bottom: 0rem; }
       section#home .player .playlist iframe {
         margin-bottom: .3rem; }
       section#home .player .playlist table {
@@ -103,11 +103,12 @@ section#home {
             border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
             section#home .player .playlist table tr td:last-child {
               text-align: right; }
-      section#home .player .playlist .soundcloud-link {
-        margin: 1rem auto;
-        text-align: center;
+    section#home .player .soundcloud-link {
+      margin: 1rem auto;
+      text-align: center;
+      margin-bottom: 4rem; }
+      section#home .player .soundcloud-link a {
         font-size: .9rem;
-        display: block;
         color: white; }
     section#home .player a {
       pointer-events: all;
@@ -142,7 +143,13 @@ section#home {
         line-height: 1.4; }
         section#home #info-section .info-box p.light {
           color: #333; }
+        section#home #info-section .info-box p.short-p {
+          margin: 0;
+          line-height: .3;
+          text-align: center; }
       section#home #info-section .info-box a {
+        pointer-events: all;
+        cursor: pointer;
         color: #050505;
         text-decoration: underline; }
   @media (max-width: 720px) {
