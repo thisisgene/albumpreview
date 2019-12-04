@@ -103,11 +103,17 @@ section#home {
             border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
             section#home .player .playlist table tr td:last-child {
               text-align: right; }
+      section#home .player .playlist .soundcloud-link {
+        margin: 1rem auto;
+        text-align: center;
+        font-size: .9rem;
+        display: block;
+        color: white; }
     section#home .player a {
       pointer-events: all;
-      color: white;
+      color: #5EE7D5;
       cursor: pointer;
-      font-size: 1.1rem; }
+      font-size: 1.2rem; }
   section#home #info-section {
     background: #eee;
     width: 100vw;
