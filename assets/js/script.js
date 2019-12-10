@@ -2,6 +2,7 @@ let keysArray = [
   { key: 'AfHn3', value: "Ink Music's" },
   { key: 'UdTe2', value: "Cut Surface's" },
   { key: 'Pfa9d', value: "Phat Penguin's" },
+  { key: 'Fa4rb', value: "Fabrique's" },
   { key: 'IfH3r', value: "Anna's" },
   { key: 'JevY2', value: "Laurin's" }
 ]
